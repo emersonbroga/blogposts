@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manipulando DOM com textContent, innerText e innerHTML</title>
+</head>
+<body>
+
+  <div id="content">
+    Texto com <strong>negrito</strong> e texto <span style="display: none;">oculto</span>
+  </div>
+
+  <script type="text/javascript">
+    const content = document.getElementById('content');
+    
+    const usingInnerHTML = content.innerHTML;
+    // Texto com <strong>negrito</strong> e texto <span style="display: none;">oculto</span>
+    
+    const usingInnerText = content.innerText;
+    // usingInnerText Texto com negrito e texto
+
+    const usingTextContent = content.textContent;
+    // 
+    // Texto com negrito e texto oculto
+    //
+   
+  </script>
+</body>
+</html>
